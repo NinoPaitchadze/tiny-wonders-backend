@@ -6,4 +6,59 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="obj\Debug\net9.0\.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net9.0\TinyWondersAPI.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net9.0\TinyWondersAPI.GlobalUsings.g.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="obj\Debug\net9.0\rpswa.dswa.cache.json" />
+    <Content Include="obj\Debug\net9.0\staticwebassets.removed.txt" />
+    <Content Include="obj\project.assets.json" />
+    <Content Include="obj\TinyWondersAPI.csproj.nuget.dgspec.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.2.0" />
+    <PackageReference Include="CloudinaryDotNet" Version="1.29.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.2.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.9.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.19.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\net9.0\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="Hubs\" />
+    <Folder Include="Middleware\" />
+    <Folder Include="obj\Debug\net9.0\refint\" />
+    <Folder Include="obj\Debug\net9.0\ref\" />
+    <Folder Include="obj\Debug\net9.0\staticwebassets\" />
+    <Folder Include="Repositories\Implementations\" />
+    <Folder Include="Repositories\Interfaces\" />
+    <Folder Include="Services\Implementations\" />
+    <Folder Include="Services\Interfaces\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="obj\Debug\net9.0\TinyWondersAPI.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net9.0\TinyWondersAPI.assets.cache" />
+    <None Include="obj\Debug\net9.0\TinyWondersAPI.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\project.nuget.cache" />
+    <None Include="obj\TinyWondersAPI.csproj.nuget.g.props" />
+    <None Include="obj\TinyWondersAPI.csproj.nuget.g.targets" />
+  </ItemGroup>
+
 </Project>
