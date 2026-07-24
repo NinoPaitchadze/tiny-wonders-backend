@@ -4,14 +4,18 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
 using TinyWondersAPI.Models;
+using TinyWondersAPI.Services.Implementations;
+using TinyWondersAPI.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Services
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSignalR(); 
+builder.Services.AddSignalR();
 
+
+builder.Services.AddScoped<IAuthService, AuthService>();
 // Swagger with JWT support
 builder.Services.AddSwaggerGen(options =>
 {
