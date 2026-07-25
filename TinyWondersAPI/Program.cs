@@ -16,6 +16,9 @@ builder.Services.AddSignalR();
 
 
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IArticleService, ArticleService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IImageService, ImageService>();
 // Swagger with JWT support
 builder.Services.AddSwaggerGen(options =>
 {
