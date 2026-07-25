@@ -19,6 +19,7 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IArticleService, ArticleService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IImageService, ImageService>();
+builder.Services.AddScoped<ICommentService, CommentService>();
 // Swagger with JWT support
 builder.Services.AddSwaggerGen(options =>
 {
@@ -103,6 +104,6 @@ app.UseCors("AllowFrontend");
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
-//app.MapHub<TinyWondersAPI.Hubs.CommentHub>("/hubs/comments");
+app.MapHub<TinyWondersAPI.Hubs.CommentHub>("/hubs/comments");
 
 app.Run();
